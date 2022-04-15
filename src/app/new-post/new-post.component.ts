@@ -21,7 +21,7 @@ export class NewPostComponent implements OnInit {
   formSubmit() {
     this.blogPost.tags = this.tags.split(",").map(tag => tag.trim());
     this.blogPost.isPrivate = false;
-    this.blogPost.postDate = new Date().toLocaleDateString();
+    this.blogPost.postDate = new Date().toDateString();
     this.blogPost.postedBy = "BTI425 Student";
     this.blogPost.views = 0;
     console.log(this.blogPost);
